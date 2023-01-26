@@ -1,5 +1,5 @@
-const src1 = "/assets/bot.png"
-const src2 = "/assets/user.png"
+const src1 = "./assets/bot.png"
+const src2 = "./assets/user.png"
 // import bot from './assets/bot.svg'
 // import user from './assets/user.svg'
 
@@ -78,7 +78,7 @@ const handleSubmit = async (e) =>{
   const messageDiv = document.getElementById(uniqueId);
   loader(messageDiv);  
 
-  const response = await fetch('http://localhost:5000',{
+  const response = await fetch('https://openapi-vwoc.onrender.com/',{
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
