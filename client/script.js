@@ -106,6 +106,5 @@ form.addEventListener('submit', handleSubmit)
 form.addEventListener('keyup', (e)=>{
   if(e.key === 'Enter'){
    handleSubmit(e);
-   console.log("Heloo")
   }
 })
